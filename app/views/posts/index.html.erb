@@ -1,0 +1,9 @@
+<h1> All Posts </h1> 
+
+<% @posts.each do |post| %> 
+<p> 
+<%= link_to(post.title, post) %> 
+<%= edit_post_link(post) %> 
+<%= link_to('Delete', post, method: :delete) %> 
+</p> 
+<% end %> 
